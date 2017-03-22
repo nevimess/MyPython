@@ -1,0 +1,7 @@
+{% csrf_token %}
+{% block content %}
+
+{% for user in userlist %}
+<p>{{user.username}}\br</p>
+{% endfor %}
+{% endblock %}
